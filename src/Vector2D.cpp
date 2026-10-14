@@ -1,6 +1,16 @@
-#ifndef VECTOR2D_H
-#define VECTOR2D_H
+#include "Vector2D.h"
 
+// implementación del constructor por defecto
+Vector2D::Vector2D() : x(0.0), y(0.0) {}
 
+// iimplementación del constructor parametrizado
+Vector2D::Vector2D(double x_val, double y_val) : x(x_val), y(y_val) {}
 
-#endif
+// implementación de los métodos Getters
+double Vector2D::getX() const {
+    return x;
+}
+
+double Vector2D::getY() const {
+    return y;
+}
