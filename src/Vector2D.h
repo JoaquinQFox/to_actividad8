@@ -1,6 +1,9 @@
 #ifndef VECTOR2D_H
 #define VECTOR2D_H
 
+#include <string>
+#include <cmath>
+
 class Vector2D {
 private:
     double x; // Atributo para la coordenada X
@@ -16,6 +19,13 @@ public:
     // Getters para permitir que tus compañeros accedan a x e y si lo necesitan
     double getX() const;
     double getY() const;
+
+    // Calcular magnitud
+    inline double calcularMagitud() {
+        return std::sqrt((x * x) + (y * y));
+    }
+
+    std::string toString() const;
 };
 
 #endif // VECTOR2D_H

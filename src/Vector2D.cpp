@@ -1,3 +1,6 @@
+#include <cmath>
+#include <sstream>
+
 #include "Vector2D.h"
 
 // implementación del constructor por defecto
@@ -13,4 +16,10 @@ double Vector2D::getX() const {
 
 double Vector2D::getY() const {
     return y;
+}
+
+std::string Vector2D::toString() const {
+    std::ostringstream resultado;
+    resultado << "(" << x << ", " << y << ")";
+    return resultado.str();
 }
