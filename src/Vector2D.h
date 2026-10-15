@@ -29,6 +29,9 @@ public:
 
     // Sobrecarga del operador + de clase Vector2D
     Vector2D operator+(const Vector2D& otro) const;
+
+    // Declaración de función friend para el producto punto
+    friend double productoPunto(const Vector2D& v1, const Vector2D& v2);
 };
 
 #endif // VECTOR2D_H
