@@ -13,7 +13,6 @@ int main() {
     Vector2D vResultado = v1 + v2;
     std::cout << "Resultado: " << vResultado.toString() << std::endl;
 
-<<<<<<< HEAD
     double umbral = 5.0; // Umbral de prueba
 
     // Definición de la función lambda que captura el 'umbral'
@@ -41,12 +40,10 @@ int main() {
     }
 
 
-=======
     // Probando función friend 
     double resultadoPunto = productoPunto(v1, v2);
     std::cout << "Producto punto: " << resultadoPunto << std::endl; 
     
     
->>>>>>> 37223d3d524c8ce583e24d6f0f84ed837f7a7f82
     return 0;
 }
