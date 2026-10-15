@@ -26,6 +26,9 @@ public:
     }
 
     std::string toString() const;
+
+    // Sobrecarga del operador + de clase Vector2D
+    Vector2D operator+(const Vector2D& otro) const;
 };
 
 #endif // VECTOR2D_H

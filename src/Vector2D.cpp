@@ -23,3 +23,8 @@ std::string Vector2D::toString() const {
     resultado << "(" << x << ", " << y << ")";
     return resultado.str();
 }
+
+// Implementación de la sobrecarga del operador +
+Vector2D Vector2D::operator+(const Vector2D& otro) const {
+    return Vector2D(x + otro.x, y + otro.y);
+}
