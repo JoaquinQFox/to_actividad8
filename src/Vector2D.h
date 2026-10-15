@@ -10,13 +10,13 @@ private:
     double y; // Atributo para la coordenada Y
 
 public:
-    // Constructor por defecto (inicializa x e y en 0)
+    // Constructor por defecto
     Vector2D();
 
-    // Constructor con parámetros (inicializa x e y con valores específicos)
+    // Constructor con parámetros
     Vector2D(double x_val, double y_val);
 
-    // Getters para permitir que tus compañeros accedan a x e y si lo necesitan
+    // Getters de acceso a x e y 
     double getX() const;
     double getY() const;
 
