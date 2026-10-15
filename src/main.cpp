@@ -13,5 +13,10 @@ int main() {
     Vector2D vResultado = v1 + v2;
     std::cout << "Resultado: " << vResultado.toString() << std::endl;
 
+    // Probando función friend 
+    double resultadoPunto = productoPunto(v1, v2);
+    std::cout << "Producto punto: " << resultadoPunto << std::endl; 
+    
+    
     return 0;
 }
